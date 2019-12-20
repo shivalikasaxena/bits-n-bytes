@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+body{
+  /*background-image: url("C:\Users\aymad\Desktop\Hacathon\image.jpg");
+  /* linear-gradient(to right bottom, rgb(17, 133, 226), rgb(79, 228, 66)); */
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginbox{
+  width: 520px;
+  height: 440px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  opacity: 0.8;
+  padding: 80px 30px;
+}
+
+.logim{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  border-radius: 50%;
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],input[type="password"]
+{
+  border-style: hidden;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #000;
+}
+
+.b1{
+  background-color: rgb(15, 69, 221);
+  font-size: 25px;
+  border-radius: 10px;
+  opacity: 0.9;
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  transition-duration: 0.4s;
+  margin-left: 37%;
+}
+
+.b1:hover
+{
+  cursor: pointer;
+  border-style: 2px inset;
+  opacity: 1;
+  background-color: #008CBA;
+  color: white;
+}
+
+.loginbox a{
+  color: rgb(11, 21, 157);
+}
+
+.loginbox a:hover{
+  cursor: pointer;
+  color: rgb(68, 77, 198);
+}
+
+.a1{
+  margin-left: 10%;
+}
+.a2{
+  margin-left: 35%;
+}
