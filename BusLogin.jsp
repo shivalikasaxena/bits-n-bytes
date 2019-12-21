@@ -14,12 +14,12 @@
   <body>
   <script type="text/javascript">
   function validate() {
-	  if(document.login.LoginId.value==""||document.login.Password.value=="")
+	  if(document.login.uname.value==""||document.pass.Password.value=="")
 		  {
 		  alert("LoginId or Password cannot be blank!");
 		  return;
 		  }
-	  document.login.action="LoginValidate.jsp";
+	  document.login.action="ControlPage.jsp";
 	  document.login.submit();
   }
 
@@ -37,12 +37,12 @@
     <div class="loginbox">
       <img src="photos/images.png" class="logim">
       <h1>Control Room Login</h1>
-      <form method="post" action="">
+      <form name= "login" method="post" action="ControlPage.jsp">
         <p>Operator Name</p>
         <input type="text" name="uname" id="uname" value="" placeholder="Enter Username">
         <p>Password</p>
         <input type="password" name="pass" id="pass" value="" placeholder="Enter Password"><br><br>
-        <button name="Submit" value="Submit" onclick="validate()" class="b1">Submit</button><br><br>
+        <button name="Submit" value="Submit" onclick="validate();" class="b1">Submit</button><br><br>
         <!-- <a class="a1" href="forgot.html">Forgot Password</a> -->
         <!-- <a class="a2" href="register.html">Create Account</a> -->
       </form>
