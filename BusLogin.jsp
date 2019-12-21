@@ -8,9 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" type="text/css" href="login.css">
+    
   </head>
 
   <body>
+  <script type="text/javascript">
+  function validate() {
+	  if(document.login.LoginId.value==""||document.login.Password.value=="")
+		  {
+		  alert("LoginId or Password cannot be blank!");
+		  return;
+		  }
+	  document.login.action="LoginValidate.jsp";
+	  document.login.submit();
+  }
+
+ 
+</script>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a href="select.php" class="navbar-brand">Control Room</a>
     <button class="navbar-toggler" type="button" name="button" data-toggle="collapse" data-target="#navbarmenu">
@@ -28,7 +42,7 @@
         <input type="text" name="uname" id="uname" value="" placeholder="Enter Username">
         <p>Password</p>
         <input type="password" name="pass" id="pass" value="" placeholder="Enter Password"><br><br>
-        <button name="Submit" value="Submit" onclick="return checkforblank()" class="b1">Submit</button><br><br>
+        <button name="Submit" value="Submit" onclick="validate()" class="b1">Submit</button><br><br>
         <!-- <a class="a1" href="forgot.html">Forgot Password</a> -->
         <!-- <a class="a2" href="register.html">Create Account</a> -->
       </form>
